@@ -36,6 +36,7 @@
             // 
             this.SplashTimer.Enabled = true;
             this.SplashTimer.Interval = 3000;
+            this.SplashTimer.Tick += new System.EventHandler(this.SplashTimer_Tick);
             // 
             // SplashForm
             // 
@@ -43,7 +44,7 @@
             this.BackColor = System.Drawing.Color.LightGray;
             this.BackgroundImage = global::BMICalculator.Properties.Resources.bmi_calclulator_chart_lbs;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(304, 442);
+            this.ClientSize = new System.Drawing.Size(320, 480);
             this.ControlBox = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SplashForm";

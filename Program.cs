@@ -14,7 +14,7 @@ namespace BMICalculator
      * had VS 2012 with no github extension
      * This was the original v0.1
      */
-    static class Program
+    public static class Program
     {
         public static BMICalculator bmicalculator;
 
