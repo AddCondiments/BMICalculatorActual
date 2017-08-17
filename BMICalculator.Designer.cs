@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.MetricRadio = new System.Windows.Forms.RadioButton();
-            this.HeightLabel = new System.Windows.Forms.Label();
-            this.WeightTextBox = new System.Windows.Forms.TextBox();
-            this.HeightTextBox = new System.Windows.Forms.TextBox();
             this.ImperialRadio = new System.Windows.Forms.RadioButton();
             this.WeightLabel = new System.Windows.Forms.Label();
+            this.HeightTextBox = new System.Windows.Forms.TextBox();
+            this.WeightTextBox = new System.Windows.Forms.TextBox();
+            this.MetricRadio = new System.Windows.Forms.RadioButton();
+            this.HeightLabel = new System.Windows.Forms.Label();
             this.CalculateButtonPannel = new System.Windows.Forms.Panel();
             this.CalcuateButton = new System.Windows.Forms.Button();
             this.ResultTextBox = new System.Windows.Forms.TextBox();
@@ -72,45 +72,6 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(304, 442);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // MetricRadio
-            // 
-            this.MetricRadio.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MetricRadio.Location = new System.Drawing.Point(3, 3);
-            this.MetricRadio.Name = "MetricRadio";
-            this.MetricRadio.Size = new System.Drawing.Size(145, 67);
-            this.MetricRadio.TabIndex = 0;
-            this.MetricRadio.TabStop = true;
-            this.MetricRadio.Text = "Metric";
-            this.MetricRadio.UseVisualStyleBackColor = true;
-            // 
-            // HeightLabel
-            // 
-            this.HeightLabel.AutoSize = true;
-            this.HeightLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.HeightLabel.Location = new System.Drawing.Point(3, 73);
-            this.HeightLabel.Name = "HeightLabel";
-            this.HeightLabel.Size = new System.Drawing.Size(145, 73);
-            this.HeightLabel.TabIndex = 0;
-            this.HeightLabel.Text = "The Height";
-            // 
-            // WeightTextBox
-            // 
-            this.WeightTextBox.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.WeightTextBox.Location = new System.Drawing.Point(154, 178);
-            this.WeightTextBox.Name = "WeightTextBox";
-            this.WeightTextBox.Size = new System.Drawing.Size(147, 38);
-            this.WeightTextBox.TabIndex = 1;
-            this.WeightTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // HeightTextBox
-            // 
-            this.HeightTextBox.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.HeightTextBox.Location = new System.Drawing.Point(154, 105);
-            this.HeightTextBox.Name = "HeightTextBox";
-            this.HeightTextBox.Size = new System.Drawing.Size(147, 38);
-            this.HeightTextBox.TabIndex = 0;
-            this.HeightTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // ImperialRadio
             // 
             this.ImperialRadio.AutoSize = true;
@@ -131,6 +92,45 @@
             this.WeightLabel.Size = new System.Drawing.Size(98, 62);
             this.WeightLabel.TabIndex = 1;
             this.WeightLabel.Text = "The Weight";
+            // 
+            // HeightTextBox
+            // 
+            this.HeightTextBox.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.HeightTextBox.Location = new System.Drawing.Point(154, 105);
+            this.HeightTextBox.Name = "HeightTextBox";
+            this.HeightTextBox.Size = new System.Drawing.Size(147, 38);
+            this.HeightTextBox.TabIndex = 0;
+            this.HeightTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // WeightTextBox
+            // 
+            this.WeightTextBox.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.WeightTextBox.Location = new System.Drawing.Point(154, 178);
+            this.WeightTextBox.Name = "WeightTextBox";
+            this.WeightTextBox.Size = new System.Drawing.Size(147, 38);
+            this.WeightTextBox.TabIndex = 1;
+            this.WeightTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // MetricRadio
+            // 
+            this.MetricRadio.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MetricRadio.Location = new System.Drawing.Point(3, 3);
+            this.MetricRadio.Name = "MetricRadio";
+            this.MetricRadio.Size = new System.Drawing.Size(145, 67);
+            this.MetricRadio.TabIndex = 0;
+            this.MetricRadio.TabStop = true;
+            this.MetricRadio.Text = "Metric";
+            this.MetricRadio.UseVisualStyleBackColor = true;
+            // 
+            // HeightLabel
+            // 
+            this.HeightLabel.AutoSize = true;
+            this.HeightLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.HeightLabel.Location = new System.Drawing.Point(3, 73);
+            this.HeightLabel.Name = "HeightLabel";
+            this.HeightLabel.Size = new System.Drawing.Size(145, 73);
+            this.HeightLabel.TabIndex = 0;
+            this.HeightLabel.Text = "The Height";
             // 
             // CalculateButtonPannel
             // 
@@ -191,6 +191,7 @@
             this.Name = "BMICalculator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BMI Calculator";
+            this.Load += new System.EventHandler(this.BMICalculator_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.CalculateButtonPannel.ResumeLayout(false);
