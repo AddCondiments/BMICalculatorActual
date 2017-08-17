@@ -12,9 +12,12 @@ namespace BMICalculator
      * (!!!Note for TOM!!!) - I started this in B3
      * on a computer that only 
      * had VS 2012 with no github extension
+     * This was the original v0.1
      */
     static class Program
     {
+        public static BMICalculator bmicalculator;
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -23,6 +26,9 @@ namespace BMICalculator
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            bmicalculator = new BMICalculator();
+
             Application.Run(new BMICalculator());
         }
     }

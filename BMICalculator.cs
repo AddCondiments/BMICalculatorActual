@@ -8,6 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/* Matthew Watada
+ * 300832220
+ * August 17th 2017
+ * v0.2 This was a pain in the ass, but it's done....
+ * Created most of the event handling from the calculate button.
+ */
+
 namespace BMICalculator
 {
     public partial class BMICalculator : Form
