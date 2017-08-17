@@ -38,7 +38,7 @@
             this.CalculateButtonPannel = new System.Windows.Forms.Panel();
             this.CalcuateButton = new System.Windows.Forms.Button();
             this.ResultTextBox = new System.Windows.Forms.TextBox();
-            this.SclaeCategoryTextBox = new System.Windows.Forms.TextBox();
+            this.ScaleCategoryTextBox = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.CalculateButtonPannel.SuspendLayout();
             this.SuspendLayout();
@@ -57,7 +57,7 @@
             this.tableLayoutPanel1.Controls.Add(this.HeightLabel, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.CalculateButtonPannel, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.ResultTextBox, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.SclaeCategoryTextBox, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.ScaleCategoryTextBox, 0, 5);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -101,6 +101,7 @@
             this.HeightTextBox.Size = new System.Drawing.Size(147, 38);
             this.HeightTextBox.TabIndex = 0;
             this.HeightTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.HeightTextBox.TextChanged += new System.EventHandler(this.HeightTextBox_TextChanged);
             // 
             // WeightTextBox
             // 
@@ -110,6 +111,7 @@
             this.WeightTextBox.Size = new System.Drawing.Size(147, 38);
             this.WeightTextBox.TabIndex = 1;
             this.WeightTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.WeightTextBox.TextChanged += new System.EventHandler(this.WeightTextBox_TextChanged);
             // 
             // MetricRadio
             // 
@@ -165,17 +167,17 @@
             this.ResultTextBox.TabIndex = 2;
             this.ResultTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // SclaeCategoryTextBox
+            // ScaleCategoryTextBox
             // 
-            this.tableLayoutPanel1.SetColumnSpan(this.SclaeCategoryTextBox, 2);
-            this.SclaeCategoryTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SclaeCategoryTextBox.Location = new System.Drawing.Point(3, 368);
-            this.SclaeCategoryTextBox.Multiline = true;
-            this.SclaeCategoryTextBox.Name = "SclaeCategoryTextBox";
-            this.SclaeCategoryTextBox.ReadOnly = true;
-            this.SclaeCategoryTextBox.Size = new System.Drawing.Size(298, 71);
-            this.SclaeCategoryTextBox.TabIndex = 3;
-            this.SclaeCategoryTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tableLayoutPanel1.SetColumnSpan(this.ScaleCategoryTextBox, 2);
+            this.ScaleCategoryTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ScaleCategoryTextBox.Location = new System.Drawing.Point(3, 368);
+            this.ScaleCategoryTextBox.Multiline = true;
+            this.ScaleCategoryTextBox.Name = "ScaleCategoryTextBox";
+            this.ScaleCategoryTextBox.ReadOnly = true;
+            this.ScaleCategoryTextBox.Size = new System.Drawing.Size(298, 71);
+            this.ScaleCategoryTextBox.TabIndex = 3;
+            this.ScaleCategoryTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // BMICalculator
             // 
@@ -211,7 +213,7 @@
         private System.Windows.Forms.Panel CalculateButtonPannel;
         private System.Windows.Forms.Button CalcuateButton;
         private System.Windows.Forms.TextBox ResultTextBox;
-        private System.Windows.Forms.TextBox SclaeCategoryTextBox;
+        private System.Windows.Forms.TextBox ScaleCategoryTextBox;
     }
 }
 
